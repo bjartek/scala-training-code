@@ -1,21 +1,27 @@
 package scalaexamples.intro
 
 class Stuff {
-  
-  // Override the toString method to say "Stuff"
-  
-  // Define a constant 'const' saying "This is a constant"
-  
-  // Define a variable 'variable' saying "This is a variable"
-  
-  // Define a method saying "Hello " to whatever input
-  
-  // Deine a method which prints hello, returning Unit (void)
+  override def toString = "Stuff"
+
+
+
+  val const = "This is a constant"
+
+  var variable = "This is a variable"
+
+  def sayHello(dude: String ) = "Hello " + dude
+
+
+  def printHello(name: String)  {
+    println(sayHello(name))
+
+  }
 
 }
 
 object Stuff {
-  
-  // Define a method that returns "StuffObject"
-  
+
+  def getString() = "StuffObject"
+
+
 }
