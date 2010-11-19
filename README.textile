@@ -1,3 +1,8 @@
+h2. 
+This is a fork of the main code where i will solve the coding examples. 
+
+Using gitflow
+
 h2. Scala training - code
 
 This github project is the code used for the Scala training course. It is recommended to solve them supervised during a training session.
