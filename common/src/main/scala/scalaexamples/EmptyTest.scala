@@ -8,6 +8,9 @@ import org.junit.runners.JUnit4
 class EmptyTest {
 
   // Write a unit test. Make it fail, and then make it pass.
-  @Test def testRun{}
+  @Test def testRun{
+
+    assertFalse(false)
+  }
 
 }
