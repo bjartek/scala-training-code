@@ -2,6 +2,7 @@ package scalaexamples.intro
 
 // Print out HelloWorld
 object HelloWorld1 extends Application {
+  println("HelloWorld")
   	
 }
 
@@ -9,6 +10,7 @@ object HelloWorld1 extends Application {
 object HelloWorld2 {
   
   def main(args: Array[String]) {
+    println("HelloWorld")
   }
 	
 }

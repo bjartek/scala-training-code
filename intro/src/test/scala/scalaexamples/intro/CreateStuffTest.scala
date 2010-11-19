@@ -11,51 +11,40 @@ class CreateStuffTest extends EmptyTest {
 
   val stuff = new Stuff
   
-  // @Test
+  @Test
   def accessOverridenToString {
     assertEquals("Stuff", stuff.toString)
   }
   
-  // @Test
+  @Test
   def accessVal {
-    // Make this compile and run
-    
-  	// assertEquals("This is a constant", stuff.const)
-   
-    // When commenting in the following line, you must get a compile error
+  	assertEquals("This is a constant", stuff.const)
   	// stuff.const = "Must give compile error"
   }
   
-  // @Test
+  @Test
   def changeVar {
-    // Make this compile and run 
-    
-    // assertEquals("This is a variable", stuff.variable)
+
+    assertEquals("This is a variable", stuff.variable)
     val text = "Changed it"
-    // stuff.variable = text
-    // assertEquals(text, stuff.variable)
+    stuff.variable = text
+    assertEquals(text, stuff.variable)
     ()
   }
   
-  // @Test
+  @Test
   def accessStuffObject {
-    // Make this compile and run
-    
-    //assertEquals("StuffObject", Stuff.getString)
+    assertEquals("StuffObject", Stuff.getString)
   }
   
-  // @Test
+  @Test
   def testSayHello {
-    // Make this compile and run
-    
-    // assertEquals("Hello Alf", stuff.sayHello("Alf"))
+    assertEquals("Hello Alf", stuff.sayHello("Alf"))
   }
 
-  // @Test
+  @Test
   def testPrintHello {
-    // Make this compile and run
-    
-    // assertEquals((), stuff.printHello("Alf"))
+    assertEquals((), stuff.printHello("Alf"))
   }
   
 }
