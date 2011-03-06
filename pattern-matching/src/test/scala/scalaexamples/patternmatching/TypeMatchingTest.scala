@@ -9,13 +9,15 @@ import scalaexamples.EmptyTest
 @RunWith(classOf[JUnit4])
 class TypeMatchingTest extends EmptyTest {
   
-  // @Test 
+  @Test 
   def matchOnType {
 	val elements = List(23, "Hello", 8.5, 'q') 
 	for (element <- elements) { 
 	  element match { 
-	    // Make test run, and assert on types, e.g. " => assertEquals(23, integer)" or " => assertEquals("Hello", s)"
-	    // Insert your matching code here
+      case i:Int => assertEquals(23, i)
+      case s:String => assertEquals("Hello", s)
+      case f:Double => assertEquals(8.5, f)
+      case c:Char => assertEquals('q', c)
 	    case other => error("Should match other on type")
 	 }
 	}
