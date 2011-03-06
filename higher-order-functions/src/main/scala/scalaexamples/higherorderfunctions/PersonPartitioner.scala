@@ -8,6 +8,6 @@ class PersonPartitioner {
   // returns two new lists, one with the persons for which the function returns true
   // and one with the persons for which the function returns false
   
-  // def partitionPersons(persons: List[Person], ...): (List[Person], List[Person]) = (Nil, Nil)
+  def partitionPersons(persons: List[Person], f: Person => Boolean): (List[Person], List[Person]) = persons.partition(f)
 
 }
