@@ -3,13 +3,11 @@ package scalaexamples.inheritance
 import scala.math._
 
 // Make Circle extend Shape, and add a primary constructor for radius and color
-class Circle {
+class Circle(radius: Double, color: String) extends Shape(color) {
 
-  // Create a auxiliary constructor
-  
-  // Define the area function
-  
-  // Make this compile
-  // def circumference = 2 * Pi * radius
+  def this(radius:Double) = this(radius, Shape.DefaultColor)
+
+  def area = Pi * radius * radius
+  def circumference = 2 * Pi * radius
   
 }
